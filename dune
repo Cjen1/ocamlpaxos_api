@@ -4,16 +4,6 @@
  (libraries capnp)
   )
 
-(rule
- (targets messaging_api.ml messaging_api.mli)
- (deps messaging_api.capnp )
- (action
-  (run 
-    capnpc -o %{bin:capnpc-ocaml} -I /home/cjj39/go/src/zombiezen.com/go/capnproto2/std -o ocaml %{deps})
-  )
-  )
-
-
 (env
  (dev
   (flags

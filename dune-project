@@ -1,6 +1,6 @@
 (lang dune 1.11)
 (using fmt 1.2)
-(name ocamlpaxos)
+(name ocamlpaxos_api)
 (source (github cjen1/OcamlPaxos_api))
 (authors "Chris Jensen")
 
